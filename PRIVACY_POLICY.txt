@@ -1,0 +1,1 @@
+Privacy Policy placeholder: This browser-first app processes uploaded files locally where supported and does not require an AI API. Replace this with your final legal policy before production.

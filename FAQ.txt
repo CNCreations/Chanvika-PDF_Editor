@@ -1,0 +1,1 @@
+FAQ: Does it use AI? No. Does it need a backend? No. Can every PDF have perfect original-font editing? No; PDF structures vary.

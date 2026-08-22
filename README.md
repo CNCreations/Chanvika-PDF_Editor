@@ -1,24 +1,24 @@
-# Chanvika PDF Editor v4
+# Chanvika PDF Editor v6 — Word-style editor
 
-Colorful browser-first PDF toolkit for GitHub Pages. No AI API and no required backend.
+Upload a PDF and edit it in a document-like workspace.
 
-## Working features
-- PDF upload and drag/drop
-- Visible selected-file cards in Editor, Converter, Split, Security and Doctor
-- PDF page preview, navigation and zoom-ready viewer
-- Editor tools that actually place annotations on the page: Text, Highlight, Whiteout, Draw, Rectangle
-- Export annotations into a new PDF
-- Merge PDFs
-- Split/extract pages
-- PDF -> JPG
-- JPG/PNG -> PDF
-- Metadata inspection/removal
-- PDF health check/rebuild
-- PWA/service worker
-- GitHub Pages workflow
+### Real functionality
+- PDF.js page rendering
+- Text objects with font, size, color, bold/italic
+- Select and move added text
+- Whiteout to cover existing content
+- Add replacement text
+- Highlight
+- Rectangle
+- Freehand draw
+- Undo/redo
+- Page navigation and zoom
+- Export edited PDF with pdf-lib
+- GitHub Pages deployment
+- No AI API and no backend required
 
-## Honest limitation
-This editor does not pretend to rewrite arbitrary existing PDF text while preserving its original embedded font/layout. For an existing text block, use Whiteout + Text to create a visual replacement. Full structural text editing/OCR/font matching is a larger engine project. Open-source browser editors demonstrate that this is possible with a substantially larger PDF editing engine.
+### Important limitation
+A PDF is not a Word document. Arbitrary existing PDF text is not guaranteed to be directly editable with its original embedded font/style in every file. This version provides the practical PDF editing workflow: cover existing content and place replacement text, while newly added text is genuinely editable before export.
 
-## Deploy
-Settings -> Pages -> Source: GitHub Actions.
+### Deploy
+GitHub → Settings → Pages → Source: GitHub Actions.
