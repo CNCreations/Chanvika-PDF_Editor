@@ -1,7 +1,17 @@
-# Chanvika PDF Editor v11
+# Chanvika PDF Editor — Core Editing Prototype v12
 
-Original-text-first editor.
+This is a deliberately small prototype to validate the core requirement before adding the rest of the application.
 
-The PDF is rendered as the visual page, while each detected original PDF text run is represented once in an aligned document layer. There is no second copy of the text visible: the editable object replaces the displayed text region. Click any detected text to edit it in place, then export.
+Core flow:
+1. Upload a native/text PDF.
+2. Each detected PDF text run is represented once in an aligned editable layer.
+3. Click a text run.
+4. It becomes the only visible editable representation at that location.
+5. Type/delete/replace.
+6. Export PDF.
 
-This is intended for native text PDFs. Scanned/image PDFs require OCR.
+Important limitation:
+- This prototype is for native text PDFs.
+- Scanned/image PDFs require OCR.
+- PDF fonts/layouts can vary; export currently embeds a standard font for changed text.
+- This is a proof-of-concept for the editing architecture, not yet the final all-tools product.
