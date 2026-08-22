@@ -1,5 +1,11 @@
-# Chanvika PDF Editor v13 — Core
+# Chanvika PDF Editor v14 — Delete/Replace Export Fix
 
-This build intentionally does NOT render an HTML text layer. The PDF canvas is the only visible document text. Transparent click targets identify PDF.js text runs; editing occurs in a side editor. On export, only changed text regions are covered and redrawn.
+Focused prototype for validating that edits become visible in the exported PDF.
 
-This validates the UI/selection architecture without duplicate visible text. It is still not a universal arbitrary-PDF content-stream rewriter: PDF internals vary, and exact embedded-font preservation requires a deeper parser.
+- PDF canvas is the only visible page.
+- Transparent hit targets select detected PDF text.
+- Sidebar changes the selected run.
+- Delete sets replacement text to empty.
+- Export changes only modified text regions.
+
+This remains a visual PDF editing strategy rather than a universal low-level PDF content-stream parser. Exact embedded fonts and arbitrary PDF operators require a deeper PDF parser.

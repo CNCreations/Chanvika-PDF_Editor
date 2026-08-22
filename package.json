@@ -1,6 +1,6 @@
 {
   "name": "chanvika-pdf-editor",
-  "version": "13.0.0-core",
+  "version": "14.0.0",
   "private": true,
   "type": "module",
   "scripts": {
