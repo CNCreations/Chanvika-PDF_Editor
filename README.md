@@ -1,12 +1,10 @@
-# Chanvika PDF Editor v9 — Click-to-Edit Fix
+# Chanvika PDF Editor v10 — True Document-Layer Editor
 
-Critical fix for PDF text clicking:
-- In Select/Edit mode, the drawing canvas is now click-through.
-- PDF.js text spans are the active click targets.
-- Clicking detected native PDF text opens it in the editor inspector.
-- Whiteout/draw/highlight tools still use the overlay canvas.
+This version changes the editing architecture: detected PDF text is represented as actual HTML text objects above the rendered PDF page. Clicking a text object selects it and turns it into a real textarea, allowing direct typing, deletion and replacement.
 
 Workflow:
-Upload PDF → Select/Edit → click visible text → change text → Export PDF.
+Upload → Edit → click any detected text → type directly → Export PDF.
 
-Scanned PDFs still require OCR for direct text selection.
+Added text is also a real document object. Whiteout and other tools can be layered in later.
+
+Limitations: PDFs vary widely. Scanned/image PDFs need OCR. Exact original embedded font preservation is not guaranteed.
