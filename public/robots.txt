@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cncreations.github.io/Chanvika-PDF_Editor/sitemap.xml

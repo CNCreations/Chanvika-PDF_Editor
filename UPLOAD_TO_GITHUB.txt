@@ -1,0 +1,7 @@
+IMPORTANT:
+1. Upload the ENTIRE extracted project to GitHub.
+2. The .github folder is intentionally hidden in many file explorers, but GitHub supports it.
+3. If uploading via GitHub web, use Add file > Upload files and upload the workflow file separately if your uploader hides dot-folders.
+4. The workflow path must remain .github/workflows/deploy.yml.
+5. In GitHub: Settings > Pages > Source: GitHub Actions.
+6. Push to main and wait for Actions to finish.
