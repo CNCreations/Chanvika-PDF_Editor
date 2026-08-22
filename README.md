@@ -1,10 +1,7 @@
-# Chanvika PDF Editor v10 — True Document-Layer Editor
+# Chanvika PDF Editor v11
 
-This version changes the editing architecture: detected PDF text is represented as actual HTML text objects above the rendered PDF page. Clicking a text object selects it and turns it into a real textarea, allowing direct typing, deletion and replacement.
+Original-text-first editor.
 
-Workflow:
-Upload → Edit → click any detected text → type directly → Export PDF.
+The PDF is rendered as the visual page, while each detected original PDF text run is represented once in an aligned document layer. There is no second copy of the text visible: the editable object replaces the displayed text region. Click any detected text to edit it in place, then export.
 
-Added text is also a real document object. Whiteout and other tools can be layered in later.
-
-Limitations: PDFs vary widely. Scanned/image PDFs need OCR. Exact original embedded font preservation is not guaranteed.
+This is intended for native text PDFs. Scanned/image PDFs require OCR.
