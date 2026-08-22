@@ -1,7 +1,12 @@
-# Chanvika PDF Editor v8 — Direct PDF Text Editing
+# Chanvika PDF Editor v9 — Click-to-Edit Fix
 
-This version adds a PDF.js-derived text layer. With **Select / Edit** active, users can click visible native PDF text, edit it in the inspector, and export. The original text area is covered and the replacement is drawn into the same position.
+Critical fix for PDF text clicking:
+- In Select/Edit mode, the drawing canvas is now click-through.
+- PDF.js text spans are the active click targets.
+- Clicking detected native PDF text opens it in the editor inspector.
+- Whiteout/draw/highlight tools still use the overlay canvas.
 
-Also includes add text, whiteout, highlight, shapes, freehand, undo/redo, zoom, pages, PWA and GitHub Pages deployment.
+Workflow:
+Upload PDF → Select/Edit → click visible text → change text → Export PDF.
 
-Scanned/image PDFs still require OCR for direct text selection.
+Scanned PDFs still require OCR for direct text selection.
